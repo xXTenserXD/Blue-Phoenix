@@ -1,0 +1,589 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local TopFrame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local PlayerScript = Instance.new("ImageButton")
+local Base  = Instance.new("ImageButton")
+local Tree = Instance.new("ImageButton")
+local Build = Instance.new("ImageButton")
+local MainList = Instance.new("Frame")
+local UIPageLayout = Instance.new("UIPageLayout")
+local Players = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
+local UICorner_1 = Instance.new("UICorner")
+local NoClip = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local DupeUI = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HipHeight = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local PlayerSpeed = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_1 = Instance.new("UIGradient")
+local Base_1 = Instance.new("Frame")
+local TpToBase = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextButton_1 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_1 = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TreeGUI = Instance.new("Frame")
+local AutoFarm = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SetTp = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local ModWood = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local TpWood = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local SellTree = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local SellPlank = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Tree_1 = Instance.new("TextLabel")
+local UICorner_21 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Build_1 = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local TextButton_9 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_27 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local FillBluePrint = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+
+ScreenGui.Parent = game:GetService("CoreGui")
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.Active = true
+ImageLabel.Draggable = true
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9591727081"
+ImageLabel.Size = UDim2.new(0, 515, 0, 266)
+ImageLabel.Position = UDim2.new(0.25646552443504333, 0, 0.24207012355327606, 0)
+
+UICorner.Parent = ImageLabel
+UICorner.CornerRadius = UDim.new(0, 15)
+
+TopFrame.Parent = ImageLabel
+TopFrame.Size = UDim2.new(0, 515, 0, 32)
+TopFrame.Position = UDim2.new(0, 0, 0, -20)
+TopFrame.Name = "TopFrame"
+TopFrame.BorderSizePixel = 0
+TopFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+
+UIGradient.Parent = TopFrame
+UIGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0, 0.533333, 1)),
+    ColorSequenceKeypoint.new(1, Color3.new(1, 0.0117647, 0.243137))
+ })
+
+Close.Parent = TopFrame
+Close.TextWrapped = true
+Close.BorderSizePixel = 0
+Close.BackgroundColor3 = Color3.new(0.007843137718737125, 0.529411792755127, 0.9960784912109375)
+Close.Size = UDim2.new(0, 41, 0, 32)
+Close.TextSize = 33
+Close.TextColor3 = Color3.new(1, 0, 0)
+Close.Text = "X"
+Close.Font = Enum.Font.SourceSans
+Close.Position = UDim2.new(1, -41, 0, 0)
+Close.Name = "Close"
+
+ScrollingFrame.Parent = ImageLabel
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.Size = UDim2.new(0, 79, 0, 254)
+ScrollingFrame.ScrollBarImageColor3 = Color3.new(0.003921568859368563, 0.5686274766921997, 1)
+ScrollingFrame.ScrollBarThickness = 7
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.Position = UDim2.new(0, 0, 0.04511278122663498, 0)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+PlayerScript.Parent = ScrollingFrame
+PlayerScript.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerScript.Image = "http://www.roblox.com/asset/?id=9597424446"
+PlayerScript.Size = UDim2.new(1, -8, 0.007000000216066837, 60)
+PlayerScript.PressedImage = "http://www.roblox.com/asset/?id=9597307693"
+PlayerScript.BackgroundTransparency = 1
+PlayerScript.Name = "PlayerScript"
+
+Base.Parent = ScrollingFrame
+Base.ScaleType = Enum.ScaleType.Fit
+Base.BackgroundColor3 = Color3.new(1, 1, 1)
+Base.Image = "http://www.roblox.com/asset/?id=9597292503"
+Base.Size = UDim2.new(1, -8, 0.007000000216066837, 60)
+Base.BackgroundTransparency = 1
+Base.Position = UDim2.new(0.057851240038871765, 0, 0.37773358821868896, 0)
+Base.Name = "Base "
+
+Tree.Parent = ScrollingFrame
+Tree.BackgroundColor3 = Color3.new(1, 1, 1)
+Tree.Image = "http://www.roblox.com/asset/?id=9597790422"
+Tree.Size = UDim2.new(1, -8, 0.007000000216066837, 60)
+Tree.BackgroundTransparency = 1
+Tree.Position = UDim2.new(0.057851240038871765, 0, 0.6819085478782654, 0)
+Tree.Name = "Tree"
+
+Build.Parent = ScrollingFrame
+Build.BackgroundColor3 = Color3.new(1, 1, 1)
+Build.Image = "http://www.roblox.com/asset/?id=9597278407"
+Build.Size = UDim2.new(1, -8, 0.007000000216066837, 60)
+Build.BackgroundTransparency = 1
+Build.Position = UDim2.new(0.057851240038871765, 0, 0.12723657488822937, 0)
+Build.Name = "Build"
+
+MainList.Parent = ImageLabel
+MainList.Size = UDim2.new(0, 431, 0, 254)
+MainList.ClipsDescendants = true
+MainList.BackgroundTransparency = 1
+MainList.Position = UDim2.new(0.1631067991256714, 0, 0.04511278122663498, 0)
+MainList.Name = "MainList"
+MainList.BackgroundColor3 = Color3.new(0, 0.917647123336792, 1)
+
+UIPageLayout.Parent = MainList
+UIPageLayout.FillDirection = Enum.FillDirection.Vertical
+UIPageLayout.EasingStyle = Enum.EasingStyle.Circular
+UIPageLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIPageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIPageLayout.Circular = true
+UIPageLayout.TweenTime = 0.5
+
+Players.Parent = MainList
+Players.Size = UDim2.new(0, 431, 0, 254)
+Players.BackgroundTransparency = 1
+Players.Position = UDim2.new(0.1631067991256714, 0, 0.04511278122663498, 0)
+Players.Name = "Players"
+Players.BackgroundColor3 = Color3.new(1, 1, 1)
+
+Fly.Parent = Players
+Fly.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+Fly.Size = UDim2.new(0, 168, 0, 41)
+Fly.TextSize = 35
+Fly.TextColor3 = Color3.new(1, 1, 1)
+Fly.Text = "Fly"
+Fly.Font = Enum.Font.GrenzeGotisch
+Fly.Position = UDim2.new(0.5104408264160156, 0, 0.7283464670181274, 0)
+Fly.Name = "Fly"
+
+UICorner_1.Parent = Fly
+
+NoClip.Parent = Players
+NoClip.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+NoClip.Size = UDim2.new(0, 168, 0, 41)
+NoClip.TextSize = 35
+NoClip.TextColor3 = Color3.new(1, 1, 1)
+NoClip.Text = "NoClip"
+NoClip.Font = Enum.Font.GrenzeGotisch
+NoClip.Position = UDim2.new(0.06728538870811462, 0, 0.28740158677101135, 0)
+NoClip.Name = "NoClip"
+
+UICorner_2.Parent = NoClip
+
+InfJump.Parent = Players
+InfJump.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+InfJump.Size = UDim2.new(0, 168, 0, 41)
+InfJump.TextSize = 35
+InfJump.TextColor3 = Color3.new(1, 1, 1)
+InfJump.Text = "Infinite Jump"
+InfJump.Font = Enum.Font.GrenzeGotisch
+InfJump.Position = UDim2.new(0.5127609968185425, 0, 0.28740155696868896, 0)
+InfJump.Name = "InfJump"
+
+UICorner_3.Parent = InfJump
+
+DupeUI.Parent = Players
+DupeUI.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+DupeUI.Size = UDim2.new(0, 168, 0, 41)
+DupeUI.TextSize = 35
+DupeUI.TextColor3 = Color3.new(1, 1, 1)
+DupeUI.Text = "Dupe Client"
+DupeUI.Font = Enum.Font.GrenzeGotisch
+DupeUI.Position = UDim2.new(0.5127609968185425, 0, 0.5039370059967041, 0)
+DupeUI.Name = "DupeUI"
+
+UICorner_4.Parent = DupeUI
+
+HipHeight.Parent = Players
+HipHeight.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+HipHeight.Size = UDim2.new(0, 168, 0, 41)
+HipHeight.TextSize = 35
+HipHeight.TextColor3 = Color3.new(1, 1, 1)
+HipHeight.Text = "Hip Height"
+HipHeight.Font = Enum.Font.GrenzeGotisch
+HipHeight.Position = UDim2.new(0.06728538870811462, 0, 0.5039370059967041, 0)
+HipHeight.Name = "HipHeight"
+
+UICorner_5.Parent = HipHeight
+
+PlayerSpeed.Parent = Players
+PlayerSpeed.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+PlayerSpeed.Size = UDim2.new(0, 168, 0, 41)
+PlayerSpeed.TextSize = 35
+PlayerSpeed.TextColor3 = Color3.new(1, 1, 1)
+PlayerSpeed.Text = "Player Speed"
+PlayerSpeed.Font = Enum.Font.GrenzeGotisch
+PlayerSpeed.Position = UDim2.new(0.06728538870811462, 0, 0.7283464670181274, 0)
+PlayerSpeed.Name = "PlayerSpeed"
+
+UICorner_6.Parent = PlayerSpeed
+
+TextLabel.Parent = Players
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.Size = UDim2.new(0, 204, 0, 39)
+TextLabel.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 39
+TextLabel.Text = "Players"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Position = UDim2.new(0.2552204132080078, 0, 0.04724409431219101, 0)
+
+UICorner_7.Parent = TextLabel
+
+UIGradient_1.Parent = TextLabel
+UIGradient_1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0.6, 1, 0)),
+    ColorSequenceKeypoint.new(1, Color3.new(0.00784314, 0.686275, 1))
+ })
+
+Base_1.Parent = MainList
+Base_1.Size = UDim2.new(0, 431, 0, 254)
+Base_1.BackgroundTransparency = 1
+Base_1.Name = "Base"
+Base_1.BackgroundColor3 = Color3.new(1, 1, 1)
+
+TpToBase.Parent = Base_1
+TpToBase.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TpToBase.Size = UDim2.new(0, 168, 0, 41)
+TpToBase.TextSize = 35
+TpToBase.TextColor3 = Color3.new(1, 1, 1)
+TpToBase.Text = "Tp To Base"
+TpToBase.Font = Enum.Font.GrenzeGotisch
+TpToBase.Position = UDim2.new(0.06728538870811462, 0, 0.28740158677101135, 0)
+TpToBase.Name = "TpToBase"
+
+UICorner_8.Parent = TpToBase
+
+TextButton.Parent = Base_1
+TextButton.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton.Size = UDim2.new(0, 168, 0, 41)
+TextButton.TextSize = 35
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.Text = "Button 1"
+TextButton.Font = Enum.Font.GrenzeGotisch
+TextButton.Position = UDim2.new(0.5127609968185425, 0, 0.28740155696868896, 0)
+
+UICorner_9.Parent = TextButton
+
+TextButton_1.Parent = Base_1
+TextButton_1.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_1.Size = UDim2.new(0, 168, 0, 41)
+TextButton_1.TextSize = 35
+TextButton_1.TextColor3 = Color3.new(1, 1, 1)
+TextButton_1.Text = "Button 1"
+TextButton_1.Font = Enum.Font.GrenzeGotisch
+TextButton_1.Position = UDim2.new(0.5127609968185425, 0, 0.5039370059967041, 0)
+
+UICorner_10.Parent = TextButton_1
+
+TextButton_2.Parent = Base_1
+TextButton_2.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_2.Size = UDim2.new(0, 168, 0, 41)
+TextButton_2.TextSize = 35
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.Text = "Button 1"
+TextButton_2.Font = Enum.Font.GrenzeGotisch
+TextButton_2.Position = UDim2.new(0.06728538870811462, 0, 0.7283464670181274, 0)
+
+UICorner_11.Parent = TextButton_2
+
+TextButton_3.Parent = Base_1
+TextButton_3.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_3.Size = UDim2.new(0, 168, 0, 41)
+TextButton_3.TextSize = 35
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.Text = "Button 1"
+TextButton_3.Font = Enum.Font.GrenzeGotisch
+TextButton_3.Position = UDim2.new(0.5127609968185425, 0, 0.7283464670181274, 0)
+
+UICorner_12.Parent = TextButton_3
+
+TextLabel_1.Parent = Base_1
+TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_1.Size = UDim2.new(0, 204, 0, 39)
+TextLabel_1.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_1.TextSize = 39
+TextLabel_1.Text = " Base"
+TextLabel_1.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_1.Font = Enum.Font.SourceSansBold
+TextLabel_1.Position = UDim2.new(0.2552204132080078, 0, 0.04724409431219101, 0)
+
+UICorner_13.Parent = TextLabel_1
+
+UIGradient_2.Parent = TextLabel_1
+UIGradient_2.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0.6, 1, 0)),
+    ColorSequenceKeypoint.new(1, Color3.new(0.00784314, 0.686275, 1))
+ })
+
+TextButton_4.Parent = Base_1
+TextButton_4.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_4.Size = UDim2.new(0, 168, 0, 41)
+TextButton_4.TextSize = 35
+TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+TextButton_4.Text = "Button 1"
+TextButton_4.Font = Enum.Font.GrenzeGotisch
+TextButton_4.Position = UDim2.new(0.06728538870811462, 0, 0.5039370059967041, 0)
+
+UICorner_14.Parent = TextButton_4
+
+TreeGUI.Parent = MainList
+TreeGUI.Size = UDim2.new(0, 431, 0, 254)
+TreeGUI.BackgroundTransparency = 1
+TreeGUI.Name = "TreeGUI"
+TreeGUI.BackgroundColor3 = Color3.new(1, 1, 1)
+
+AutoFarm.Parent = TreeGUI
+AutoFarm.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+AutoFarm.Size = UDim2.new(0, 168, 0, 41)
+AutoFarm.TextSize = 26
+AutoFarm.TextColor3 = Color3.new(1, 1, 1)
+AutoFarm.Text = "Auto Farm(Select Tree)"
+AutoFarm.Font = Enum.Font.GrenzeGotisch
+AutoFarm.Position = UDim2.new(0.06728538870811462, 0, 0.28740158677101135, 0)
+AutoFarm.Name = "AutoFarm"
+
+UICorner_15.Parent = AutoFarm
+
+SetTp.Parent = TreeGUI
+SetTp.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+SetTp.Size = UDim2.new(0, 168, 0, 41)
+SetTp.TextSize = 22
+SetTp.TextColor3 = Color3.new(1, 1, 1)
+SetTp.Text = "Set Tp (SpawnPoint 4 Auto)"
+SetTp.Font = Enum.Font.GrenzeGotisch
+SetTp.Position = UDim2.new(0.5127609968185425, 0, 0.28740155696868896, 0)
+SetTp.Name = "SetTp"
+
+UICorner_16.Parent = SetTp
+
+ModWood.Parent = TreeGUI
+ModWood.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+ModWood.Size = UDim2.new(0, 168, 0, 41)
+ModWood.TextSize = 35
+ModWood.TextColor3 = Color3.new(1, 1, 1)
+ModWood.Text = "Mod Wood"
+ModWood.Font = Enum.Font.GrenzeGotisch
+ModWood.Position = UDim2.new(0.5127609968185425, 0, 0.5039370059967041, 0)
+ModWood.Name = "ModWood"
+
+UICorner_17.Parent = ModWood
+
+TpWood.Parent = TreeGUI
+TpWood.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TpWood.Size = UDim2.new(0, 168, 0, 41)
+TpWood.TextSize = 35
+TpWood.TextColor3 = Color3.new(1, 1, 1)
+TpWood.Text = "Tp Tree"
+TpWood.Font = Enum.Font.GrenzeGotisch
+TpWood.Position = UDim2.new(0.06728538870811462, 0, 0.5039370059967041, 0)
+TpWood.Name = "TpWood"
+
+UICorner_18.Parent = TpWood
+
+SellTree.Parent = TreeGUI
+SellTree.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+SellTree.Size = UDim2.new(0, 168, 0, 41)
+SellTree.TextSize = 35
+SellTree.TextColor3 = Color3.new(1, 1, 1)
+SellTree.Text = "Sell Tree"
+SellTree.Font = Enum.Font.GrenzeGotisch
+SellTree.Position = UDim2.new(0.06728538870811462, 0, 0.7283464670181274, 0)
+SellTree.Name = "SellTree"
+
+UICorner_19.Parent = SellTree
+
+SellPlank.Parent = TreeGUI
+SellPlank.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+SellPlank.Size = UDim2.new(0, 168, 0, 41)
+SellPlank.TextSize = 35
+SellPlank.TextColor3 = Color3.new(1, 1, 1)
+SellPlank.Text = "Sell Plank"
+SellPlank.Font = Enum.Font.GrenzeGotisch
+SellPlank.Position = UDim2.new(0.5127609968185425, 0, 0.7283464670181274, 0)
+SellPlank.Name = "SellPlank"
+
+UICorner_20.Parent = SellPlank
+
+Tree_1.Parent = TreeGUI
+Tree_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Tree_1.Size = UDim2.new(0, 204, 0, 39)
+Tree_1.TextStrokeColor3 = Color3.new(1, 1, 1)
+Tree_1.TextSize = 39
+Tree_1.Text = "Tree"
+Tree_1.TextColor3 = Color3.new(0, 0, 0)
+Tree_1.Font = Enum.Font.SourceSansBold
+Tree_1.Position = UDim2.new(0.2552204132080078, 0, 0.04724409431219101, 0)
+Tree_1.Name = "Tree"
+
+UICorner_21.Parent = Tree_1
+
+UIGradient_3.Parent = Tree_1
+UIGradient_3.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0.6, 1, 0)),
+    ColorSequenceKeypoint.new(1, Color3.new(0.00784314, 0.686275, 1))
+ })
+
+Build_1.Parent = MainList
+Build_1.Size = UDim2.new(0, 431, 0, 254)
+Build_1.BackgroundTransparency = 1
+Build_1.Name = "Build"
+Build_1.BackgroundColor3 = Color3.new(1, 1, 1)
+
+TextButton_5.Parent = Build_1
+TextButton_5.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_5.Size = UDim2.new(0, 168, 0, 41)
+TextButton_5.TextSize = 35
+TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+TextButton_5.Text = "Button 1"
+TextButton_5.Font = Enum.Font.GrenzeGotisch
+TextButton_5.Position = UDim2.new(0.5127609968185425, 0, 0.28740155696868896, 0)
+
+UICorner_22.Parent = TextButton_5
+
+TextButton_6.Parent = Build_1
+TextButton_6.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_6.Size = UDim2.new(0, 168, 0, 41)
+TextButton_6.TextSize = 35
+TextButton_6.TextColor3 = Color3.new(1, 1, 1)
+TextButton_6.Text = "Button 1"
+TextButton_6.Font = Enum.Font.GrenzeGotisch
+TextButton_6.Position = UDim2.new(0.5127609968185425, 0, 0.5039370059967041, 0)
+
+UICorner_23.Parent = TextButton_6
+
+TextButton_7.Parent = Build_1
+TextButton_7.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_7.Size = UDim2.new(0, 168, 0, 41)
+TextButton_7.TextSize = 35
+TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+TextButton_7.Text = "Button 1"
+TextButton_7.Font = Enum.Font.GrenzeGotisch
+TextButton_7.Position = UDim2.new(0.06728538870811462, 0, 0.5039370059967041, 0)
+
+UICorner_24.Parent = TextButton_7
+
+TextButton_8.Parent = Build_1
+TextButton_8.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_8.Size = UDim2.new(0, 168, 0, 41)
+TextButton_8.TextSize = 35
+TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+TextButton_8.Text = "Button 1"
+TextButton_8.Font = Enum.Font.GrenzeGotisch
+TextButton_8.Position = UDim2.new(0.06728538870811462, 0, 0.7283464670181274, 0)
+
+UICorner_25.Parent = TextButton_8
+
+TextButton_9.Parent = Build_1
+TextButton_9.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+TextButton_9.Size = UDim2.new(0, 168, 0, 41)
+TextButton_9.TextSize = 35
+TextButton_9.TextColor3 = Color3.new(1, 1, 1)
+TextButton_9.Text = "Button 1"
+TextButton_9.Font = Enum.Font.GrenzeGotisch
+TextButton_9.Position = UDim2.new(0.5127609968185425, 0, 0.7283464670181274, 0)
+
+UICorner_26.Parent = TextButton_9
+
+TextLabel_2.Parent = Build_1
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.Size = UDim2.new(0, 204, 0, 39)
+TextLabel_2.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 39
+TextLabel_2.Text = "Build"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Position = UDim2.new(0.2552204132080078, 0, 0.04724409431219101, 0)
+
+UICorner_27.Parent = TextLabel_2
+
+UIGradient_4.Parent = TextLabel_2
+UIGradient_4.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0.6, 1, 0)),
+    ColorSequenceKeypoint.new(1, Color3.new(0.00784314, 0.686275, 1))
+ })
+
+FillBluePrint.Parent = Build_1
+FillBluePrint.BackgroundColor3 = Color3.new(0.1764705926179886, 0.1764705926179886, 0.1764705926179886)
+FillBluePrint.Size = UDim2.new(0, 168, 0, 41)
+FillBluePrint.TextSize = 28
+FillBluePrint.TextColor3 = Color3.new(1, 1, 1)
+FillBluePrint.Text = "Fill Bp (Choose Wood)"
+FillBluePrint.Font = Enum.Font.GrenzeGotisch
+FillBluePrint.Position = UDim2.new(0.06728538870811462, 0, 0.28740158677101135, 0)
+FillBluePrint.Name = "FillBluePrint"
+
+UICorner_28.Parent = FillBluePrint
+
+UIGradient_5.Parent = ImageLabel
+UIGradient_5.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.new(0, 1, 0.85098)),
+    ColorSequenceKeypoint.new(1, Color3.new(1, 0, 0))
+ })
+
+ImageLabel.TopFrame.Close.MouseButton1Click:Connect(function()
+	ImageLabel:Destroy()
+end)
+
+local Button = PlayerScript
+
+Button.MouseButton1Click:Connect(function()
+	PlayerScript:FindFirstAncestor("ImageLabel").MainList.UIPageLayout:JumpTo(PlayerScript:FindFirstAncestor("ImageLabel").MainList.Players)
+end)
+
+local Button = Base
+
+Button.MouseButton1Click:Connect(function()
+	Base:FindFirstAncestor("ImageLabel").MainList.UIPageLayout:JumpTo(Base:FindFirstAncestor("ImageLabel").MainList.Base)
+end)
+
+local Button = Tree
+
+Button.MouseButton1Click:Connect(function()
+	Tree:FindFirstAncestor("ImageLabel").MainList.UIPageLayout:JumpTo(Tree:FindFirstAncestor("ImageLabel").MainList.Money)
+end)
+
+local Button = Build
+
+Button.MouseButton1Click:Connect(function()
+	Build:FindFirstAncestor("ImageLabel").MainList.UIPageLayout:JumpTo(Build:FindFirstAncestor("ImageLabel").MainList.Build)
+end)
